@@ -1,7 +1,5 @@
 <template>
-  <Observer 
-      className="visual-demo"
-      animationType="fadeToTop">
+  <Observer className="visual-demo" animationType="fadeInToTop">
     <section class="visual-demo__demonstration">
       <img src="../assets/visual-demo/demonstration.png" alt="demonstration">
     </section>

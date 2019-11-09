@@ -36,18 +36,18 @@ export default {
 
 <style lang="scss" scoped>
 // === Animation === \\
-.fadeToBottom-enter-active, .fadeToBottom-leave-active,
-.fadeToTop-enter-active, .fadeToTop-leave-active,
+.fadeInToBottom-enter-active, .fadeInToBottom-leave-active,
+.fadeInToTop-enter-active, .fadeInToTop-leave-active,
 .scaleOut-enter-active, .scaleOut-leave-active{
   transition: all 1s;
 }
 
-.fadeToBottom-enter, .fadeToBottom-leave-to {
+.fadeInToBottom-enter, .fadeInToBottom-leave-to {
   opacity: 0;
   transform: translateY(-100px);
 }
 
-.fadeToTop-enter, .fadeToTop-leave-to {
+.fadeInToTop-enter, .fadeInToTop-leave-to {
   opacity: 0;
   transform: translateY(100px);
 }

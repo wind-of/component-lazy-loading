@@ -19,14 +19,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  components: {
-    Observer: () => import('../Observer')
-  }
-}
-</script>
-
 <style lang="scss" scoped>
 .benefits{
   font-family: 'Roboto';

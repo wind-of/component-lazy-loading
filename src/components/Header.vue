@@ -1,7 +1,5 @@
 <template>
-  <Observer 
-    className="header"
-    animationType="fadeToBottom">
+  <Observer className="header" animationType="fadeInToBottom">
     <Navigation/>
     <Content/>
   </Observer>
@@ -11,8 +9,8 @@
 <script>
 export default {
   components: {
-    Navigation: () => import('./subcom/Navigation.vue'),
-    Content:    () => import('./subcom/Content.vue')
+    Navigation: () => import('./sub/HeaderNavigation.vue'),
+    Content:    () => import('./sub/HeaderContent.vue')
   }
 }
 </script>

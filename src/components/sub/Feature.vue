@@ -16,7 +16,9 @@
 
 <script>
 export default{
-  props: ['feature']
+  props: {
+    feature: Object
+  }
 }
 </script>
 

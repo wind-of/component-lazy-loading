@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Header/>
-    <Features/>
+    <Features :features="features"/>
     <Needs/>
     <VisualDemo/>
     <Benefits/>
-    <Pricing/>
+    <Pricing :plans="plans"/>
     <Footer/>
   </div>
 </template>
 
 <script>
+import plans from './data/plans'
+import features from './data/features'
+
 export default {
   name: 'app',
   components: {
@@ -21,7 +24,14 @@ export default {
     Benefits:   () => import('./components/Benefits'),
     Pricing:    () => import('./components/Pricing'),
     Footer:     () => import('./components/Footer'),
-  }
+  },
+
+  data() {
+    return {
+      plans,
+      features
+    }
+  },
 }
 </script>
 
